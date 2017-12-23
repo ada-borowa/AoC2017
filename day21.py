@@ -53,7 +53,6 @@ def enhance(pixel: np.ndarray,
             rules_3: List[Tuple[np.ndarray, np.ndarray]],
             iterations: int) -> np.ndarray:
     for c in range(iterations):
-        print(c)
         size = pixel.shape[0]
         if size % 2 == 0:
             new_pixel = np.zeros((size//2*3, size//2*3))
